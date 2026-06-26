@@ -35,3 +35,12 @@ select * from student01 order by name asc;
 select * from student01 order by city asc;
 select * from student01 order by cgpa desc;
 select * from student01 order by branch asc, name desc;
+
+/* Challenge */
+select * from student01 where branch in ('CSE');
+
+select * from student01 where branch in ('CSE','ECE');
+
+select distinct branch from student01; /* distinct - to display unique values */
+
+select name, cgpa from student01;
