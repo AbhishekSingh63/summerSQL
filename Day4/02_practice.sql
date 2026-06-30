@@ -6,7 +6,7 @@ select student_id,student_name, branch from student01;
 
 select distinct city from student01;
 
-select student_name from student01;
+select student_name from student01 where branch in ; /*incomplete*/
 
 select * from student01 where branch in ('CSE');
 
