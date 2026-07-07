@@ -172,4 +172,14 @@ set Phone = '9876543211'
 where CustomerName = 'Rahul';
 
 -- Q2 add one new customer without placing any order. is it possible?
+insert into Customers values
+(11,'Ramesh','9871234567','Bhopal');
+
 -- Q3 delete order 112. check whether customer information still exists?
+delete from OrderDetails
+where OrderID = 112;
+delete from Orders
+where OrderID = 112;
+select * from Customers
+where CustomerName = 'Rahul';
+
